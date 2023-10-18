@@ -4,9 +4,9 @@
 
 Mini Shop API 
 
-Live link is at https://coral-app-8bk8j.ondigitalocean.app/api/
+Base link at https://lobster-app-x357r.ondigitalocean.app/api/
 
-Doc link at [https://coral-app-8bk8j.ondigitalocean.app/docs/](https://coral-app-8bk8j.ondigitalocean.app/docs/)
+Doc link at [https://lobster-app-x357r.ondigitalocean.app/docs/](https://lobster-app-x357r.ondigitalocean.app/docs/)
 
 ## Installation Instructions
 
