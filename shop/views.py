@@ -44,7 +44,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 500,
                 'success': False,
                 'message': f"An error occurred: {str(e)}",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -64,7 +63,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 404,
                 'success': False,
                 'message': f"Product not found: {str(e)}",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_404_NOT_FOUND)
 
@@ -76,7 +74,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 200,
                 'success': True,
                 'message': "Product deleted successfully",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_200_OK)
         except Exception as e:
@@ -84,7 +81,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 500,
                 'success': False,
                 'message': f"An error occurred while deleting the product: {str(e)}",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -99,7 +95,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 200,
                 'success': True,
                 'message': "Product updated successfully",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_200_OK)
         except Exception as e:
@@ -107,7 +102,6 @@ class ProductViewSet(viewsets.ModelViewSet):
                 'status': 400,
                 'success': False,
                 'message': f"An error occurred while updating the product: {str(e)}",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_400_BAD_REQUEST)
 
@@ -124,7 +118,6 @@ class OrderViewSet(viewsets.ModelViewSet):
                 'status': 201,
                 'success': True,
                 'message': "Order created successfully",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_201_CREATED)
         except Exception as e:
@@ -132,7 +125,6 @@ class OrderViewSet(viewsets.ModelViewSet):
                 'status': 400,
                 'success': False,
                 'message': f"An error occurred while creating the order: {str(e)}",
-                'data': []
             }
             return Response(response_data, status=status.HTTP_400_BAD_REQUEST)
 
